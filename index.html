@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <link rel='stylesheet' href='./styles.css'>
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link
+    href='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'
+    rel='stylesheet'>
+  <title>Title</title>
+</head>
+<body>
+<header class='header'>
+  <div class='header__inner-wrapper'>
+    <img src='static/img/logo_urfu.svg' alt='' class='header__logo'>
+    <ul class='header__nav'>
+      <li class='header__nav-item'>
+        <div class='link'>
+          <a href=''>Об институте</a>
+          <div class='underline'></div>
+        </div></li>
+      <li class='header__nav-item'>
+        <div class='link'>
+          <a href=''>Как поступить</a>
+          <div class='underline'></div>
+        </div>
+      </li>
+      <li class='header__nav-item'>
+        <div class='link'>
+          <a href=''>Программы</a>
+          <div class='underline'></div>
+        </div></li>
+      <li class='header__nav-item'>
+        <div class='link'>
+          <a href=''>FAQ</a>
+          <div class='underline'></div>
+        </div></li>
+      <li class='header__nav-item'>
+        <div class='link'>
+          <a href=''>Контакты</a>
+          <div class='underline'></div>
+        </div></li>
+    </ul>
+    <button class='button'>Хочу поступить</button>
+  </div>
+</header>
+<section class='first-section'>
+  <!--  <img src='static/img/main.jpg' class='first-section__background-image'>-->
+  <!--  <img src='static/img/line.png' class='first-section__background-line'>-->
+  <div class='first-section__heading'>
+    <h1>Магистратура</h1>
+    <h2>Химико-технологический <br /> институт УрФУ</h2>
+  </div>
+  <div class='first-section__description'>
+    <p>Практико-ориентированное образование через прикладную
+      и фундаментальную науку
+      мирового уровня</p>
+    <div class='link' id='description-link'>
+      <a href=''>Смотреть программы</a>
+      <div class='underline'></div>
+    </div>
+  </div>
+</section>
+<section class='second-section'>
+  <div class='second-section__content'>
+    <article class='about article'>
+      <div class='about__description'>
+        <h3 class='article__heading'>Об институте</h3>
+        <p class='text'>ХТИ - это глубокие научные и образовательные традиции, а также высококвалифицированные
+          сотрудники, обладающие богатым опытом в решении разноплановых фундаментальных и прикладных задач в области
+          современной химии и химической технологии.</p>
+        <div class='link'>
+          <a href=''>Посетить сайт института</a>
+          <div class='underline'></div>
+        </div>
+        <button class='button'>Поступить</button>
+      </div>
+      <div class='about__content'>
+        <div class='videos'>
+          <img src='./static/img/v1.jpg' class='videos__image'>
+          <img src='./static/img/v2.jpg' class='videos__image'>
+        </div>
+        <div class='advantages'>
+          <ul class='advantages__list'>
+            <li class='advantage'>
+              <h4 class='advantage__heading'>25</h4>
+              <div class='sep'></div>
+              <p class='advantage__description'>Российских и зарубежных академических партнеров</p>
+            </li>
+            <li class='advantage'>
+              <h4 class='advantage__heading'>20</h4>
+              <div class='sep'></div>
+              <p class='advantage__description'>Крупных индустриальных партнеров</p>
+            </li>
+            <li class='advantage'>
+              <h4 class='advantage__heading'>150</h4>
+              <div class='sep'></div>
+              <p class='advantage__description'>Бюджетных мест по программам магистратуры</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </article>
+    <article class='how article'>
+      <div class='how__header'>
+        <h3 class='article__heading'>Как поступить?</h3>
+        <div class='toggle-switch'>
+          <p class='toggle-switch__value chosen' id='budget'>Бюджет</p>
+          <button class='switch-button'>
+            <span class='switch-button__circle switch-button__circle_budget'></span>
+          </button>
+          <p class='toggle-switch__value' id='contract'>Контракт</p>
+        </div>
+      </div>
+      <ul class='steps'>
+        <li class='step'>
+          <ul class='step__points'>
+            <li class='point'>
+              <div class='point__check first'>1</div>
+              <span>Узнайте о поступлении</span>
+            </li>
+            <li class='point'>
+              <div class='point__check'></div>
+              <span>Правила приема</span>
+            </li>
+            <li class='point'>
+              <div class='point__check'></div>
+              <div>
+                <span>Сроки подачи документов</span>
+                <ul class='deadlines'>
+                  <li class='deadline' id='deadline_1'>
+                    <span class='deadline__heading'>Очная форма обучения:</span>
+                    <span class='deadline__date'>20.06 - 08.08</span>
+                  </li>
+                  <li class='deadline' id='deadline_2'>
+                    <span class='deadline__heading'>Очно-заочная форма обучения:  </span>
+                    <span class='deadline__date'>20.06 - 08.08</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class='step'>
+          <ul class='step__points'>
+            <li class='point'>
+              <div class='point__check first'>2</div>
+              <span>Выберите образовательную программу</span>
+            </li>
+            <li class='point'>
+              <div class='point__check'></div>
+              <div>
+                <span>Каталог образовательных программ</span>
+                <div class='link' style='margin-top: 16px'>
+                  <a href='' >Смотреть программы</a>
+                  <div class='underline' ></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class='step'>
+          <ul class='step__points'>
+            <li class='point'>
+              <div class='point__check first red'>3</div>
+              <span>Подайте документы</span>
+            </li>
+            <li class='point'>
+              <div class='point__check red'></div>
+              <div>
+                <span>Подать документы онлайн через личный кабинет абитуриента</span>
+                <div class='link' style='margin-top: 14px'>
+                  <a href=''>Регистрация</a>
+                  <div class='underline'></div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </li>
+        <li class='step'>
+          <ul class='step__points'>
+            <li class='point'>
+              <div class='point__check first'>4</div>
+              <span>Пройдите вступительные испытания</span>
+            </li>
+            <li class='point'>
+              <div class='point__check'></div>
+              <span>Период сдачи вступительных испытаний</span>
+            </li>
+            <li class='point'>
+              <div class='point__check'></div>
+              <div>
+                <ul class='deadlines' style='margin-top: 6px'>
+                  <li class='deadline' id='period_1'>
+                    <span class='deadline__heading'>Очная форма обучения:</span>
+                    <span class='deadline__date'>20.06 - 08.08</span>
+                  </li>
+                  <li class='deadline' id='period_2'>
+                    <span class='deadline__heading'>Очно-заочная форма обучения:  </span>
+                    <span class='deadline__date'>20.06 - 08.08</span>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </article>
+  </div>
+</section>
+<footer></footer>
+<script src='index.js'></script>
+</body>
+</html>
