@@ -216,7 +216,6 @@ a {
 
 .link .underline {
     width: 100%;
-    /*border: 1px solid #FFFFFF;*/
     transition: 300ms ease;
     background: white;
     height: 2px;
